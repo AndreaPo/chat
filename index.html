@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>chat</title>
+</head>
+<body>
+  <!-- Form Box -->
+  <div id="form">
+    <!--- Title Box -->
+    <div id="box-title"><h1 id="title">welcome to the chat</h1></div>
+    <!-- Users List Box -->
+    <div id="box-users">
+
+      <h1>Online:  </h1>
+      
+      <h2 id="users"></h2>
+      
+      <div id="box-nick">
+        
+        <h4>Type a message as: <input type="text" id="nickname" placeholder="nickname here" ></h4>
+
+      </div>
+
+    </div> 
+    <!-- History Messages Box -->
+    <div id="box-messages">
+    </div>
+    <!-- Inputs To Send Message-->
+    <input type="text" id="message" placeholder="type a message">
+  
+    <button id="btn" >chat</button>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="/main.js"></script>
+  
+</body>
+</html>
